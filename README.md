@@ -70,7 +70,7 @@ This grain analysis was important when calculating project-level metrics such as
 
 ---
 
-# Business Questions
+## Business Questions
 
 ### Geographic Distribution
 
@@ -109,7 +109,7 @@ This grain analysis was important when calculating project-level metrics such as
 
 ---
 
-# Tools & Technologies
+## Tools & Technologies
 
 | Tool                | Purpose                                                              |
 | ------------------- | -------------------------------------------------------------------- |
@@ -117,6 +117,34 @@ This grain analysis was important when calculating project-level metrics such as
 | **MySQL 8.0**       | Data validation and business analysis                                |
 | **Power BI**        | Interactive dashboard and business visualization                     |
 | **GitHub**          | Portfolio documentation and project version control                  |
+
+---
+
+## Project Files
+
+| Component | Description | File |
+|---|---|---|
+| Dataset Documentation | Official dataset source, access instructions, and data considerations | [View Dataset README](data/README.md) |
+| Python | Data cleaning, feature engineering, validation, and exploratory data analysis | [Open Python Notebook](python/Affordable_Housing_Project.ipynb) |
+| SQL — Data Validation & EDA | Dataset validation, data quality checks, and exploratory SQL analysis | [View SQL Script](sql/01_data_validation_and_eda.sql) |
+| SQL — Business Analysis | Business insights, project segmentation, rankings, and contribution analysis | [View SQL Script](sql/02_business_analysis.sql) |
+| Power BI | Interactive dashboard with three pages covering executive overview, housing strategy, and project performance | [Download Power BI Dashboard](powerbi/NYC's_Affordable_Housing_Production.pbix) |
+
+---
+
+## Dashboard Preview
+
+### Executive Overview
+
+![Executive Overview](screenshots/01_executive_overview.png)
+
+### Housing Strategy & Affordability
+
+![Housing Strategy & Affordability](screenshots/02_housing_strategy.png)
+
+### Project Performance & Concentration
+
+![Project Performance & Concentration](screenshots/03_project_performance.png)
 
 ---
 
@@ -164,7 +192,7 @@ Five records contained negative project durations. These were confirmed as data-
 
 ---
 
-# 2. MySQL — Data Validation & Business Analysis
+## 2. MySQL — Data Validation & Business Analysis
 
 The cleaned dataset was loaded into MySQL and analyzed using SQL.
 
@@ -213,15 +241,15 @@ The SQL analysis uses CTEs, aggregations, window functions, ranking, segmentatio
 
 ---
 
-# 3. Power BI — Interactive Dashboard
+## 3. Power BI — Interactive Dashboard
 
 The cleaned MySQL dataset was connected to Power BI to create an interactive three-page dashboard.
 
-## Page 1 — Executive Overview
+### Page 1 — Executive Overview
 
 The executive page provides a high-level view of NYC affordable housing production.
 
-### KPIs
+#### KPIs
 
 * **312,876** Affordable Units
 * **435,872** Total Units
@@ -230,7 +258,7 @@ The executive page provides a high-level view of NYC affordable housing producti
 * **7,257** Buildings
 * **140,230** Deeply Affordable Units
 
-### Visuals
+#### Visuals
 
 * Affordable Units by Borough
 * Affordable Units by Construction Strategy
@@ -239,11 +267,11 @@ The executive page provides a high-level view of NYC affordable housing producti
 
 ---
 
-## Page 2 — Housing Strategy & Affordability
+### Page 2 — Housing Strategy & Affordability
 
 This page focuses on affordability and housing composition.
 
-### KPIs
+#### KPIs
 
 * **252,473** Rental Units
 * **60,403** Homeownership Units
@@ -253,7 +281,7 @@ Deeply affordable units are defined in this analysis as:
 
 **Extremely Low Income Units + Very Low Income Units**
 
-### Visuals
+#### Visuals
 
 * Deep Affordability Share by Construction Strategy
 * Deeply Affordable Units by Borough
@@ -263,11 +291,11 @@ Deeply affordable units are defined in this analysis as:
 
 ---
 
-## Page 3 — Project Performance & Concentration
+### Page 3 — Project Performance & Concentration
 
 This page focuses on project scale and completion.
 
-### KPIs
+#### KPIs
 
 * **5,772** Total Projects
 * **340** Very Large Projects
@@ -278,7 +306,7 @@ For this analysis, a very large project is defined as a project with:
 
 **More than 200 affordable units**
 
-### Visuals
+#### Visuals
 
 * Top 10 Projects by Affordable Units
 * Top 10 Projects by Deeply Affordable Units
@@ -455,38 +483,22 @@ nyc-affordable-housing-analysis/
 │   └── README.md
 │
 ├── python/
-│   └── housing_project.ipynb
+│   └── Affordable_Housing_Project.ipynb
 │
 ├── sql/
 │   ├── 01_data_validation_and_eda.sql
 │   └── 02_business_analysis.sql
 │
 ├── powerbi/
-│   └── NYC_Affordable_Housing.pbix
+│   └── NYC's_Affordable_Housing_Production.pbix
 │
 └── screenshots/
-    ├── executive_overview.png
-    ├── housing_strategy.png
-    └── project_performance.png
+    ├── 01_executive_overview.png
+    ├── 02_housing_strategy.png
+    └── 03_project_performance.png
 ```
 
 > The raw NYC Open Data dataset is not included in the repository. The `data/README.md` file can provide the official source link and instructions for obtaining the data.
-
----
-
-# Dashboard Preview
-
-## Executive Overview
-
-![Executive Overview](screenshots/01_executive_overview.png)
-
-## Housing Strategy & Affordability
-
-![Housing Strategy & Affordability](screenshots/02_housing_strategy.png)
-
-## Project Performance & Concentration
-
-![Project Performance & Concentration](screenshots/03_project_performance.png)
 
 ---
 
