@@ -157,7 +157,7 @@ Python EDA examined:
 * Income-group composition
 * Bedroom composition
 * Project size
-* Project completion
+* Affordability Category
 * Project duration
 
 Five records contained negative project durations. These were confirmed as data-quality issues and were excluded **only from duration analysis**, rather than being removed from the main dataset.
@@ -524,7 +524,7 @@ The project emphasizes not only technical implementation, but also **data grain,
 
 # Author
 
-**Nora**
+**Nora Thu Thu Htet Naing**
 
 Aspiring Data Analyst / Business Analyst
 
