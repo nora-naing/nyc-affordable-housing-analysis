@@ -478,15 +478,15 @@ nyc-affordable-housing-analysis/
 
 ## Executive Overview
 
-![Executive Overview](01_executive_overview.png)
+![Executive Overview](screenshots/01_executive_overview.png)
 
 ## Housing Strategy & Affordability
 
-![Housing Strategy & Affordability](02_housing_strategy.png)
+![Housing Strategy & Affordability](screenshots/02_housing_strategy.png)
 
 ## Project Performance & Concentration
 
-![Project Performance & Concentration](03_project_performance.png)
+![Project Performance & Concentration](screenshots/03_project_performance.png)
 
 ---
 
